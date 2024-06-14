@@ -19,7 +19,7 @@ export default class Ventana1 extends Component {
       xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
           if (xhttp.responseText == 0) {
-            datos = xhttp.responseText.split(',');
+            const datos = xhttp.responseText.split(',');
             navigation.navigate('Bienvenido', {nombre: datos[2]});
           } else {
             Alert.alert('Error', 'Datos Erroneos', [{text: 'Ok'}]);
