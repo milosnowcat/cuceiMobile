@@ -6,6 +6,7 @@ export default class Ventana1 extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      device: 'phone',
       codigo: '',
       nip: '',
     };
@@ -102,6 +103,31 @@ const styles = StyleSheet.create({
       marginTop: 20,
       width: 200,
       marginLeft: 200,
+    },
+    form_input: {
+      marginTop: 20,
+    },
+  },
+  phone: {
+    logo: {
+      width: 150,
+      height: 205,
+      marginTop: 20,
+      marginLeft: 120,
+    },
+    form: {
+      width: 300,
+      height: 400,
+      borderWidth: 2,
+      borderColor: 'blue',
+      borderRadius: 20,
+      marginLeft: 50,
+      marginTop: 10,
+    },
+    form_button: {
+      marginTop: 100,
+      width: 200,
+      marginLeft: 50,
     },
     form_input: {
       marginTop: 20,
