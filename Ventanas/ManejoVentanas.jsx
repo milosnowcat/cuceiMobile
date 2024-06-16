@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Ventana1 from './Ventana1';
-import Ventana2 from './Ventana2';
+import ManejoTabs from './ManejoTabs';
 
 export default class ManejoVentanas extends Component {
   constructor(props) {
@@ -17,14 +17,14 @@ export default class ManejoVentanas extends Component {
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen
+            options={{headerShown: false}}
             name="Login"
             component={Ventana1}
-            options={{headerShow: false}}
           />
           <Stack.Screen
+            options={{headerShown: false}}
             name="Bienvenido"
-            component={Ventana2}
-            options={{headerShow: false}}
+            component={ManejoTabs}
           />
         </Stack.Navigator>
       </NavigationContainer>

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {View, Image, StyleSheet, Alert} from 'react-native';
-import {Input, Icon, Button} from '@rneui/themed';
+import {Input, Button} from '@rneui/themed';
 
 export default class Ventana1 extends Component {
   constructor(props) {
@@ -74,7 +74,6 @@ export default class Ventana1 extends Component {
             color="red"
             onPress={autenticacion}>
             Iniciar sesión
-            <Icon type="font-awesome" name="right-to-bracket" color="white" />
           </Button>
         </View>
       </View>

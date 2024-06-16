@@ -6,7 +6,7 @@ export default class Ventana2 extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      device: 'phone'
+      device: 'phone',
     };
   }
 
